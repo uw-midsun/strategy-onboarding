@@ -15,7 +15,7 @@ Onboarding tasks:
 Some extra items:
 
 - [ ] Completed [strategy welcome survey](https://forms.gle/xnYBumyAn2mA2Ao68)
-- [ ] Added `@e-wai` as a reviewer
+- [ ] Added `@e-wai` as a reviewer (top of right column in the "Open a pull request" page)
 
 <!-- 
 ## Questions
