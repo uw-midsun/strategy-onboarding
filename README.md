@@ -1,4 +1,4 @@
-# strategy-onboarding
+# Strategy Onboarding
 
 Hey, welcome to strategy onboarding! We're experimenting with a new onboarding setup, and always welcoming feedback. 
 
@@ -16,19 +16,22 @@ There's a couple exercises:
 
 Once you're done, open a pull request (PR) with all these changes and tag `@e-wai` for a review.
 
-
 ## Setup Help
+
 - Install python and git. Check that both exist on your computer with:
+
     ```
     python --version
     git --version
     ```
-- Use command line/terminal to navigate your computer's file system. `cd <directory-name>` to go down a level to the directory, or `cd ..` to go up a level. 
-- Clone the repo into the location you want using 
+
+- Use command line/terminal to navigate your computer's file system. `cd <directory-name>` to go down a level to the directory, or `cd ..` to go up a level.
+- Clone the repo into the location you want using
 
     ```
     git clone https://github.com/uw-midsun/strategy-onboarding.git
     ```
+
 - Using Python's virtualenv is a nice, easy way to manage installation packages: https://docs.python.org/3/library/venv.html. You'll need to install `pytest`. We have all the required packages stored in a `requirements.txt` file, which becomes especially useful once there are more required packages:
 
     ```
