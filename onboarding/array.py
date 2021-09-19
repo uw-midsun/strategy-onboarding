@@ -1,3 +1,4 @@
+
 def find_min_index(arr):
     '''
     Find index where minimum value first occurs in array
@@ -7,10 +8,22 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    if (len(arr) == 0):
+        raise IndexError
 
-    # insert code here
-    pass
+    min = float('inf')
+    index = 0
+    min_index = 0
 
+    for item in arr:
+        if item < min:
+            min_index = index
+            min = item
+        index = index + 1
+    
+    return min_index
+        
+    
 
 def reverse_str_arr(string):
     '''
@@ -22,6 +35,12 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
+    if (len(string) == 0):
+        raise ValueError
 
-    # insert code here
-    pass
+    reverse = list(string)
+    reverse.reverse()
+
+
+    return reverse
+
