@@ -19,7 +19,7 @@ def find_min_index(arr):
         if item < min:
             min_index = index
             min = item
-        index = index + 1
+        index += 1
     
     return min_index
         
