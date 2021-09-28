@@ -5,7 +5,6 @@
 - Will require reading from CSV, can experiment with pandas
 '''
 
-import pandas
 import matplotlib.pyplot as plt
 from math import log10
 
