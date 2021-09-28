@@ -7,9 +7,10 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    if len(arr) == 0:
+        raise ValueError
 
-    # insert code here
-    pass
+    return sorted(list(enumerate(arr)), key=lambda x: x[1])[0][0]
 
 
 def reverse_str_arr(string):
@@ -22,6 +23,4 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-
-    # insert code here
-    pass
+    return list(reversed([i for i in string]))
