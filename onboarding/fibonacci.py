@@ -15,4 +15,16 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+
+    if (n < 1):
+        raise TypeError()
+    
+    current = 1
+    prev = 1
+
+    for i in range (2, n):
+        temp = current + prev
+        prev = current
+        current = temp
+
+    return current
