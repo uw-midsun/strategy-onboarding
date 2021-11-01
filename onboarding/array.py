@@ -15,9 +15,8 @@ def find_min_index(arr):
     for i in range(len(arr)):
         if type(arr[i]) != int:
           raise TypeError()
-        if arr[i] < min:
+        if arr[i] < arr[min]:
             min = i
-            print(arr[i])
 
     return min
 

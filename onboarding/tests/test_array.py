@@ -9,6 +9,7 @@ def test_min_index():
     assert(find_min_index([0, 5, 4, -1]) == 3)
     assert(find_min_index([-6, -4, -9, 11, 18]) == 2)
     assert(find_min_index([4]) == 0)
+    assert(find_min_index([-1, -1, 4, -1]) == 0)
 
 
 def test_min_index_empty():
