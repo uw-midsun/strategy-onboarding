@@ -28,6 +28,3 @@ def fibonacci_term(n):
     else:
       print("Please enter a value greater than 0")
       raise TypeError
-
-
-# print(fibonacci_term(-1))
