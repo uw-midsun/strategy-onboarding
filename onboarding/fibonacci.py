@@ -15,4 +15,16 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+    if n > 0:
+      a = 0
+      b = 1
+      c = 0
+      for i in range(n-1):
+        print(i)
+        c = a + b
+        a = b
+        b = c
+      return c
+    else:
+      print("Please enter a value greater than 0")
+      raise TypeError
