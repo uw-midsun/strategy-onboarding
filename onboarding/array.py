@@ -24,4 +24,4 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    return 1
