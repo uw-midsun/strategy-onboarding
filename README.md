@@ -1,4 +1,4 @@
-# strategy-onboarding
+r # strategy-onboarding
 
 Hey, welcome to strategy onboarding! We're experimenting with a new onboarding setup, and always welcoming feedback.
 
