@@ -15,4 +15,19 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+    first = 1
+    second = 1
+
+    # first, second terms need to return earlier
+    if n == 1 or n == 2:
+      return 1
+    # type checks
+    if n < 1 or type(n) != int:
+      raise TypeError
+
+    for _ in range(n - 2):
+      result_sum = first + second
+      first = second
+      second = result_sum
+
+    return second
