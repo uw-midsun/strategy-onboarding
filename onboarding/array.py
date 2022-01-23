@@ -7,8 +7,17 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
-
-    # insert code here
+    if(len(arr) == 0):
+        return -1
+    else:
+        minIndex = 0
+        minVal = arr[0]
+        for x in range(1, len(arr)):
+            if(arr[x] < minVal):
+                minVal = arr[x]
+                minIndex = x
+            
+        return minIndex
     pass
 
 
@@ -23,5 +32,8 @@ def reverse_str_arr(string):
     @returns array of characters
     '''
 
-    # insert code here
+    arr = []
+    for x in range(len(string) - 1, -1, -1):
+        arr.append(string[x])
+    return arr
     pass
