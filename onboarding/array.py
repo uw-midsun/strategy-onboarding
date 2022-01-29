@@ -7,12 +7,23 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    
+    if arr == [] or type(arr) != list:
+        raise TypeError
+    
+    min = arr[0]
+    index = 0
+    for count, value in enumerate(arr) :
+        if value < min :
+            min = value
+            index = count
+    return index
 
-    # insert code here
-    pass
+#print(find_min_index([1, 33, 1, -2, 0]))
 
 
 def reverse_str_arr(string):
+    
     '''
     Return array of string characters, but in reverse order
     eg. "abc" => ['c', 'b', 'a']
@@ -22,6 +33,20 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
+    if string == '' or type(string) != str:
+        raise TypeError
 
-    # insert code here
-    pass
+    # easy way to do it:
+    # return list(reversed(string))
+
+    # harder way to do it:
+    # revstr = []
+    # for i in range(-1, -(len(string) + 1), -1) :
+    #     revstr.append(string[i])
+    # return(revstr)
+    
+    # My way: start at -1 index, go down by -1 until the (length of the string + 1) * -1
+
+    return ([string[i] for i in range(-1, -(len(string) + 1), -1)])   
+
+    
