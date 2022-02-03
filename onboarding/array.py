@@ -1,3 +1,6 @@
+from multiprocessing.sharedctypes import Value
+
+
 def find_min_index(arr):
     '''
     Find index where minimum value first occurs in array
@@ -33,8 +36,10 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-    if string == '' or type(string) != str:
+    if type(string) != str :
         raise TypeError
+    elif string == '' :
+        raise ValueError
 
     # easy way to do it:
     # return list(reversed(string))

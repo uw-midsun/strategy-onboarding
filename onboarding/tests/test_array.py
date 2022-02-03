@@ -26,7 +26,7 @@ def test_reverse_str_arr():
     assert(reverse_str_arr('abba') == ['a', 'b', 'b', 'a'])
 
 def test_reverse_str_arr_empty_string():
-    with pytest.raises(TypeError):
+    with pytest.raises(ValueError):
         reverse_str_arr('')
 
 def test_reverse_str_arr_wrong_type():
