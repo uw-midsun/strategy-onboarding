@@ -1,5 +1,3 @@
-from typing import Type
-
 def fibonacci_term(n):
     '''
     Finds nth term of the Fibonacci sequence from:

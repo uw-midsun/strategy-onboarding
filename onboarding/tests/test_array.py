@@ -1,8 +1,6 @@
 import pytest
 from ..array import find_min_index, reverse_str_arr
 
-# write some tests here!
-
 # find_min_index
 def test_find_min_index():
     assert(find_min_index([1, 33, 1, -2, 0]) == 3)
@@ -17,7 +15,6 @@ def test_find_min_index_empty_list():
 def test_find_min_index_wrong_type():
     with pytest.raises(TypeError):
         test_find_min_index(123)
-
 
 # reverse_str_arr
 def test_reverse_str_arr():
