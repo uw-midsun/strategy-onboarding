@@ -1,18 +1,23 @@
 def fibonacci_term(n):
     '''
-    Finds nth term of the Fibonacci sequence from:
-        Term | value
-        ------------
-          1  |   1
-          2  |   1
-          3  |   2
-          4  |   3
-          5  |   5
-         ... |  ...
-
     @params n: integer
     @returns integer, nth term of the Fibonacci sequence
     '''
 
-    # insert code here
-    pass
+    if (n <= 0):
+      raise TypeError
+    
+    x = 0
+    n1 = 1
+    n2 = 1
+
+    if (n==1 or n==2):
+      x = 1
+    else:
+      for i in range(2,n):
+        x = n1 + n2
+        n2 = n1
+        n1 = x
+        
+
+    return x
