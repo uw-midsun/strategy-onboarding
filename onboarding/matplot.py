@@ -7,15 +7,11 @@ TODO
 '''
 from matplotlib import pyplot as plt
 from matplotlib import style
-#import numpy as np
-import pandas as pd
-from pyparsing import col 
+import pandas as pd 
 
 data = pd.read_csv('test_data.csv', header=None)
-#data = data.head(20)
-#print(data[4])
+
 figure, axis = plt.subplots(2)
-#xAxis = fig.add_subplot(111)
 colour = ['peru', 'orchid', 'gold', 'darkcyan']
 for x in range(0, 4):
     axis[0].scatter(data[0], data[x], c=colour[x - 1], label=colour[x - 1])
@@ -23,7 +19,7 @@ axis[1].scatter(data[0], data[4], c=colour[3], label=colour[3])
 
 axis[0].set_title('Test Plot data sets 1-3')
 axis[1].set_title('Test Plot data set 4')
-axis[0].set(xlabel='x-axis', ylabel='y-axis')
+axis[0].set(ylabel='y-axis')
 axis[1].set(xlabel='x-axis', ylabel='y-axis')
 
 plt.show()

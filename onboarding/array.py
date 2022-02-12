@@ -7,7 +7,7 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
-    if(len(arr) == 0):
+    if len(arr) == 0:
         return -1
     else:
         minIndex = 0
@@ -18,7 +18,6 @@ def find_min_index(arr):
                 minIndex = x
             
         return minIndex
-    pass
 
 
 def reverse_str_arr(string):
@@ -36,4 +35,3 @@ def reverse_str_arr(string):
     for x in range(len(string) - 1, -1, -1):
         arr.append(string[x])
     return arr
-    pass
