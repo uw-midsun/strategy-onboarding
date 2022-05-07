@@ -1,6 +1,6 @@
 # strategy-onboarding
 
-Hey, welcome to strategy onboarding! We're experimenting with a new onboarding setup, and always welcoming feedback.
+Hey, welcome to strategy onboarding :) We're experimenting with a new onboarding setup, and always welcoming feedback.
 
 This is intended as more of an introduction to Python, which is the primary language we use for strategy projects, and some libraries around it. If you're more familiar with Python, this might only take you a couple minutes.
 
