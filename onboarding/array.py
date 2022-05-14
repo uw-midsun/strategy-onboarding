@@ -1,3 +1,6 @@
+from itertools import count
+
+
 def find_min_index(arr):
     '''
     Find index where minimum value first occurs in array
@@ -7,10 +10,22 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    
+    if type(arr) != list:
+        raise(TypeError)
 
     # insert code here
-    pass
-
+    min = arr[0]
+    dictionary = {}
+    counter = 0
+    for i in arr:
+        if i < min:
+            min = i
+        if i not in dictionary:
+            dictionary[i] = counter
+        counter +=1 
+        
+    return dictionary[min]
 
 def reverse_str_arr(string):
     '''
@@ -22,6 +37,8 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-
+    if type(string) != str:
+        raise(TypeError)
     # insert code here
+    return list(reversed(list(string)))
     pass
