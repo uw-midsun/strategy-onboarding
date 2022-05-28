@@ -1,4 +1,5 @@
 def fibonacci_term(n):
+
     '''
     Finds nth term of the Fibonacci sequence from:
         Term | value
@@ -14,5 +15,15 @@ def fibonacci_term(n):
     @returns integer, nth term of the Fibonacci sequence
     '''
 
-    # insert code here
+    try:
+        int(n)
+    except:
+        raise TypeError
+    if n < 1:
+        raise TypeError
+    if n in [1, 2]:
+        return 1
+
+    else:
+        return (fibonacci_term(n-1) + fibonacci_term(n-2))
     pass
