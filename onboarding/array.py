@@ -9,7 +9,10 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
+    if isinstance(arr, list) and all([isinstance(e, int) for e in arr]):
+        return arr.index(min(arr))
+    else:
+        raise TypeError("Did not provide an array of integers")
 
 
 def reverse_str_arr(string):
@@ -24,4 +27,7 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    if isinstance(string, str):
+        return list(string)[::-1]
+    else:
+        raise TypeError("Did not provide a string")
