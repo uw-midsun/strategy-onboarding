@@ -7,7 +7,18 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    
 
+    lowestIndex = 0
+    lowestNum = arr[0]
+
+    for i, num in enumerate(arr):
+        if num < lowestNum:
+            lowestNum = num
+            lowestIndex = i
+
+
+    return lowestIndex
     # insert code here
     pass
 
@@ -18,10 +29,15 @@ def reverse_str_arr(string):
     eg. "abc" => ['c', 'b', 'a']
     eg. "abba" => ['a', 'b', 'b', 'a']
     eg. "!!-.2" => ['2', '.', '-', '!', '!']
-
+s
     @param string
     @returns array of characters
     '''
-
-    # insert code here
+    
+    ansArr = []
+    
+    for i, character in enumerate(string):
+        ansArr.append(string[len(string)-i-1])
+    
+    return ansArr
     pass
