@@ -13,6 +13,14 @@ def fibonacci_term(n):
     @params n: integer
     @returns integer, nth term of the Fibonacci sequence
     '''
-
-    # insert code here
+    if not isinstance(n, int) or n <= 0:
+      raise TypeError
+    first = 1
+    second =1
+    while n >= 3:
+      temp = first + second
+      first = second
+      second = temp
+      n -= 1
+    return second
     pass
