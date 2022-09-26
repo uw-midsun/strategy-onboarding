@@ -9,8 +9,15 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
-
+    if len(arr) == 0:
+        return 0
+    val = arr[0]
+    idx = 0
+    for i, j in enumerate(arr):
+        if j < val:
+            val = j
+            idx = i
+    return idx
 
 def reverse_str_arr(string):
     '''
@@ -24,4 +31,4 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    return list(string[::-1])

@@ -15,4 +15,9 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+    if n < 1:
+      raise TypeError()
+    fib_array = [0, 1]
+    for i in range(n):
+      fib_array.append(fib_array[i] + fib_array[i+1])
+    return fib_array[n]
