@@ -4,7 +4,7 @@ Hey, welcome to strategy onboarding! We're experimenting with a new onboarding s
 
 This is intended as more of an introduction to Python, which is the primary language we use for strategy projects, and some libraries around it. If you're more familiar with Python, this might only take you a couple minutes.
 
-Feel free to message Emma Wai on Slack with any questions.
+Feel free to message Prabhav Khera or Rodrigo Tiscareno on Slack with any questions.
 
 ## Usage
 
@@ -14,7 +14,7 @@ There's a couple exercises:
 - Array: Implement `find_min_index()` and `reverse_str_arr()` in `onboarding/array.py`. This time, you'll have to write the test cases in `test_array.py`
 - Matplot: We put together some very simple data in `test_data.csv`. Read it and graph it using Matplotlib
 
-Once you're done, open a pull request (PR) with all these changes and tag `@e-wai` for a review.
+Once you're done, open a pull request (PR) with all these changes and tag `@probro27` and `@rodrigotiscareno` for a review.
 If you're waiting on a review, please take a look through the MSXIV work (https://github.com/uw-midsun/strategy) and come up with questions about what we've designed, or how we implemented certain things
 
 ## Setup Help
