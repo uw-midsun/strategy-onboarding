@@ -10,7 +10,7 @@ Feel free to message Prabhav Khera or Rodrigo Tiscareno on Slack with any questi
 
 There's a couple exercises:
 
-- Fibonacci: Implement `fibonacci_term()` in `onboarding/fibonacci.py`. Check your work by running unit tests. The unit test framework we are using is `pytest` -> to run these, install the necessary packages (see below) and run `pytest` in terminal/command line
+- Fibonacci: Implement `fibonacci_term()` in `onboarding/fibonacci.py`. Check your work by running unit tests and writing them in `test_fibonacci.py`. The unit test framework we are using is `pytest` -> to run these, install the necessary packages (see below) and run `pytest` in terminal/command line
 - Array: Implement `find_min_index()` and `reverse_str_arr()` in `onboarding/array.py`. This time, you'll have to write the test cases in `test_array.py`
 - Matplot: We put together some very simple data in `test_data.csv`. Read it and graph it using Matplotlib
 
