@@ -9,6 +9,21 @@ def find_min_index(arr):
     '''
 
     # insert code here
+    #error handling
+    if type(arr) != list:
+        raise TypeError
+
+    for i in range(len(arr)):
+        #the first element should be the smallest
+        if i == 0:
+            minVal = arr[i]
+            minIndex = i;
+        #if the current element is smaller than the current min, then update the min
+        elif arr[i] < minVal:
+            minVal = arr[i]
+            minIndex = i;
+    
+    return minIndex
     pass
 
 
@@ -24,4 +39,14 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
+    #error handling
+    if type(string) != str:
+        raise TypeError
+
+    x = []
+    #iterate through the string backwards and add each character to the array
+    for i in range(len(string)):
+        x.append(string[len(string) - 1 - i])
+    
+    return x
     pass
