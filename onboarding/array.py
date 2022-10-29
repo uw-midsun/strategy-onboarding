@@ -10,12 +10,7 @@ def find_min_index(arr):
 
     # insert code here
     pass
-    # Demo run
 
-    # ADD - stage your changes - way to tell git what you are planning to stage in a commit
-    # COMMIT - snapshot of your current file state - it saves that version to a branch
-    # PUSH - Exposes your changes made to the git repository through your branch
-    # Another change
 
 def reverse_str_arr(string):
     '''
