@@ -10,6 +10,7 @@ def find_min_index(arr):
 
     # insert code here
     pass
+    # Demo run
 
 
 def reverse_str_arr(string):
