@@ -7,9 +7,7 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
-
-    # insert code here
-    pass
+    return(arr.index(min(arr)))
 
 
 def reverse_str_arr(string):
@@ -22,6 +20,7 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-
-    # insert code here
-    pass
+    array = list(string)
+    array.reverse()
+    return(array)
+    
