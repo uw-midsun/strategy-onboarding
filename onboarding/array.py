@@ -9,7 +9,9 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
+    minimum = min(arr)
+
+    return arr.index(minimum)
 
 
 def reverse_str_arr(string):
@@ -24,4 +26,6 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    list_output = list(string)
+
+    return list_output[::-1]
