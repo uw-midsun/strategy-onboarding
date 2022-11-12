@@ -7,9 +7,18 @@ def find_min_index(arr):
     @param array of integers
     @returns integer index of minimum integer
     '''
+    arr_min = min(arr)
 
-    # insert code here
-    pass
+    minimum_list = []
+
+    for n in range(0, len(arr)):
+        if arr[n] == arr_min:
+             minimum_list.append(n)
+    
+    print(minimum_list[0])
+    return minimum_list[0]
+
+
 
 
 def reverse_str_arr(string):
@@ -24,4 +33,8 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    string_list = list(string)
+    string_list.reverse()
+    print(string_list)
+    return string_list
+
