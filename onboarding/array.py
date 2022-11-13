@@ -9,7 +9,13 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    return 0
+    smallnum=arr[0]
+    ans=0
+    for k in arr:
+        if k<smallnum:
+            smallnum=k
+            ans=arr.index(k)    
+    return ans
 
 
 def reverse_str_arr(string):
@@ -24,4 +30,9 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    return 1
+    rever= []
+    leng=len(string)-1
+    while(leng>=0):
+        rever.append(string[leng])
+        leng-=1
+    return rever
