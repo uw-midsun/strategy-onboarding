@@ -15,15 +15,23 @@ def fibonacci_term(n):
     '''
     
     # insert code here
-    pass
     n1 = 1
     n2 = 1
     fib = 0
     count = 0
     listfib = []
+
+    if n <= 0:
+      raise TypeError("Input is too small must be above zero")
+
+    if not isinstance(n, int):
+      raise TypeError("Input must be integer above zero")
+
+
+
     if n == 1 or n == 2:
-      print("your value is 1")
       return 1
+
 
     while count < n:
       n1 = n2
@@ -32,7 +40,5 @@ def fibonacci_term(n):
       listfib.append(fib)
       count += 1
     else:
-      print("Your value is " + str(listfib[n-1]))
       return listfib[n-1]
-
 

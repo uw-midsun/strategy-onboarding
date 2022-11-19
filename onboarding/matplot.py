@@ -37,12 +37,15 @@ plt.tight_layout()
 #Graph 4 (x1 x y1 x y2)
 plt.yscale('log')
 plt.ylabel('y4')
+plt.tick_params(labelleft=False, left=False)
 axis[1,1].plot(x, y4)
 axis[1,1].set_title("Graph #4 - x vs y4")
 
-
+plt.savefig('Ziven-Graph.png')
 plt.show()
 
+
+''''
 #makes a graph combining all data
 plt.figure()
 plt.title("MegaGraph")
@@ -53,8 +56,8 @@ plt.plot(x,y1)
 plt.plot(x,y2)
 plt.plot(x,y3, '--r')
 plt.plot(x,y4)
+'''
 
-plt.show()
 
 
 
