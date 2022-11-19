@@ -17,9 +17,9 @@ def fibonacci_term(n):
     # insert code here
 
     # in case of negative number
-    n = abs(n)
-
-    if n <= 2:
+    if (not type(n) is int) or n<=0:
+        raise TypeError
+    elif n <= 2:
         return 1
 
     n1 = 1
@@ -31,3 +31,6 @@ def fibonacci_term(n):
         n2 = n_term
 
     return n_term
+
+
+

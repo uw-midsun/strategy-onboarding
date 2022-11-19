@@ -9,6 +9,10 @@ def find_min_index(arr):
     '''
 
     # insert code here
+    for i in arr:
+        if not type(i) is int:
+            raise TypeError
+        
     minimum = min(arr)
 
     return arr.index(minimum)
@@ -26,6 +30,13 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
+
+    if not type(string) is str:
+            raise TypeError
+        
     list_output = list(string)
 
     return list_output[::-1]
+
+
+

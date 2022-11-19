@@ -6,6 +6,8 @@ def test_fibonacci_term():
     assert(fibonacci_term(3) == 2)
     assert(fibonacci_term(5) == 5)
     assert(fibonacci_term(22) == 17711)
+    assert(fibonacci_term(1) == 1)
+    assert(fibonacci_term(2) == 1)
 
 
 def test_fibonacci_term_zero():
