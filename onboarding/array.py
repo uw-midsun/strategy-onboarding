@@ -33,4 +33,6 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+
+    val = list(string)[::-1]
+    return val
