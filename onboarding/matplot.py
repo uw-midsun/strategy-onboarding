@@ -15,7 +15,7 @@ b = []
 c = []
 d = []
 
-with open(r'strategy-onboarding/onboarding/test_data.csv','r') as csvfile:
+with open(r'onboarding/test_data.csv','r') as csvfile:
     lines = csv.reader(csvfile, delimiter=',')
     for row in lines:
         x.append(row[0])
