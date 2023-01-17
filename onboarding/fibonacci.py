@@ -15,10 +15,14 @@ def fibonacci_term(n):
     '''
 
     # insert code here
+    if n < 1 or not isinstance(n, int):
+        raise TypeError()
+
     curr = 1
     prev = 0
-    for i in range(n):
+    for i in range(n - 1):
         next = curr + prev
         prev = curr
         curr = next
+    print(curr)
     return curr
