@@ -13,8 +13,6 @@ def fibonacci_term(n):
     @params n: integer
     @returns integer, nth term of the Fibonacci sequence
     '''
-
-    # insert code here
     if n < 1 or not isinstance(n, int):
         raise TypeError()
 

@@ -27,8 +27,6 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-
-    # insert code here
     if not isinstance(string, str):
         raise TypeError()
 
