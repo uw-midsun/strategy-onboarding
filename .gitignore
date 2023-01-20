@@ -1,5 +1,10 @@
 # Generated pytest files
 **/__pycache__
 **/.pytest_cache
-
+.venv
+bin/
+lib/
+share/
+pyvenv.cfg
+.DS_Store
 # IDE files
