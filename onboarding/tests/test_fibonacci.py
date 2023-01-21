@@ -1,5 +1,7 @@
 import pytest
-from ..fibonacci import fibonacci_term
+import sys
+sys.path.append("..")
+from fibonacci import fibonacci_term
 
 
 def test_fibonacci_term():

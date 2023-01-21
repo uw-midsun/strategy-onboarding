@@ -9,7 +9,15 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
+    minimum = arr[0]
+    index = 0
+
+    for i in range(len(arr)):
+        if arr[i] < minimum:
+            minimum = arr[i]
+            index = i
+
+    return index
 
 
 def reverse_str_arr(string):
@@ -22,6 +30,15 @@ def reverse_str_arr(string):
     @param string
     @returns array of characters
     '''
-
     # insert code here
-    pass
+
+    stack = []
+    returned_stack = []
+    for letter in string:
+        stack.append(letter)
+
+    for i in range(len(string)):
+        returned_stack.append(stack.pop())
+
+    return returned_stack
+
