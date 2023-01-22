@@ -10,10 +10,13 @@ import csv
 
 with open('test_data.csv') as csv_file:
     content = csv.reader(csv_file)
+    figure, axis = plt.subplots(2, 2)
+
     for row in content:
-        print(row)
         x = row[0]
-        for i in range(1, 4):
-            plt.scatter(x, row[i])
+        axis[0, 0].scatter(int(x), int(row[1]))
+        axis[0, 1].scatter(int(x), int(row[2]))
+        axis[1, 0].scatter(int(x), int(row[3]))
+        axis[1, 1].scatter(int(x), int(row[4]))
 
 plt.show()
