@@ -9,7 +9,13 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
+    minvalue = min(arr) # minimum value in the array
+
+    # finding the first index whose value matches the min value and returning that index
+    for i in range(len(arr)):
+        if (arr[i] == minvalue):
+            return i
+            
 
 
 def reverse_str_arr(string):
@@ -24,4 +30,7 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+
+    arr = list(string) # convert the string to a list of characters
+    arr.reverse() # reverse the list
+    return arr

@@ -3,3 +3,6 @@
 **/.pytest_cache
 
 # IDE files
+
+# Virtual Env
+/virtualenv
