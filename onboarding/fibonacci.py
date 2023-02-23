@@ -1,3 +1,4 @@
+import pytest
 def fibonacci_term(n):
     '''
     Finds nth term of the Fibonacci sequence from:
@@ -16,7 +17,7 @@ def fibonacci_term(n):
 
     # checking valid inputs
     if type(n) != int or n < 1:
-      return None
+      raise(TypeError)
     
     val1 = 1
     val2 = 1

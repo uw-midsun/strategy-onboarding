@@ -26,7 +26,10 @@ plt.ylim(0, 2000)
 
 plt.show()
 
-# these ones are very big data and messes with my computer
-# plt.plot(df[0], df[4])
-plt.plot(df[0], df[3])
+plt.plot(df[0], df[3], "g,", label = "Data 3")
 plt.show()
+
+# these ones are very big data and messes with my computer
+# plt.plot(df[0], df[4], "c--", label = "Data 4")
+# plt.plot(df[0], df[3], "g,", label = "Data 3")
+# plt.show()
