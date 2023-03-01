@@ -15,4 +15,21 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+    #check if n is an integer and greater than 0
+    #if not,raise TypeError
+    if not isinstance(n,int) or n<=0:
+        raise TypeError("n must be a positive integer")
+    first=1
+    second=1
+    if n<=2:
+        return 1
+    for i in range(2,n):
+      third=first+second
+      first,second=second,third
+
+
+    return third
+
+
+
+    
