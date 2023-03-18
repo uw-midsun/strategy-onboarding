@@ -1,7 +1,11 @@
-'''
-TODO
-- Graph all the data. This can be all the same plot, or four separate plots
-    Use Matplotlib, please!
-- Be careful of data points that don't exist
-- Will require reading from CSV, can experiment with pandas
-'''
+import matplotlib.pyplot as plt
+import pandas as pd
+
+def main():
+    df = pd.read_csv('test_data.csv')
+    plt.plot(df.iloc[:,1])
+    plt.plot(df.iloc[:,2])
+    plt.plot(df.iloc[:,3])
+    plt.plot(df.iloc[:,4])
+    plt.show()
+main()

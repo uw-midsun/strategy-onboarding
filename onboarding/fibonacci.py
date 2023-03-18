@@ -15,4 +15,17 @@ def fibonacci_term(n):
     '''
 
     # insert code here
-    pass
+    if (type(n) != int):
+      raise TypeError("Only Integers are allowed")
+    elif (n <= 0):
+      raise TypeError("Only Positive Integers allowed")
+    a = 1
+    b = 1
+    if n == 1:
+        return b
+    else:
+        for _ in range(2, n):
+            c = a + b
+            a = b
+            b = c
+        return b

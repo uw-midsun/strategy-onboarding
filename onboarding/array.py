@@ -9,7 +9,19 @@ def find_min_index(arr):
     '''
 
     # insert code here
-    pass
+    if (type(arr) != list):
+        raise TypeError("Only arrays/lists are allowed")
+    for i in range(len(arr)):
+        if (type(arr[i]) != int):
+            raise TypeError("Only integers are allowed in the array")
+    if (arr == []):
+        raise TypeError("Array cannot be empty")
+    retval = 0
+    for i in range(len(arr)):
+        if (arr[i] < arr[retval]):
+            retval = i
+    return retval
+
 
 
 def reverse_str_arr(string):
@@ -24,4 +36,6 @@ def reverse_str_arr(string):
     '''
 
     # insert code here
-    pass
+    if (type(string) != str):
+        raise TypeError("Only strings are allowed")
+    return list(string)[::-1]
