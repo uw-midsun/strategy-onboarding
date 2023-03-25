@@ -3,3 +3,7 @@
 **/.pytest_cache
 
 # IDE files
+.vscode
+
+# venv
+.venv
