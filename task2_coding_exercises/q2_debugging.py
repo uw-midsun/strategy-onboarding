@@ -15,11 +15,21 @@ def adjacent_subtraction(arr: list[int]) -> list[int] | None:
     eg. [1] => [1]
     eg. [] => None
 
+
+
     @param array of integers
     @returns array of integers or None
     """
     results = []
-    for i in range(len(arr)):
+
+    # accounting for the edge casea
+    if(len(arr) == 1):
+        return arr
+    
+    if(len(arr) == 0):
+        return None
+    
+    for i in range(len(arr)-1):   # reduced the range of the function because out of bounds error
         first = arr[i]
         second = arr[i + 1]
         results.append(second - first)
@@ -39,11 +49,18 @@ def str_math(arr: list[str]) -> int | float | None:
     @param array of strings
     @returns an int, float, or None
     """
+
+    hasNumber = False
+
     total = 0
     for s in arr:
         try:
-            total += int(s)
+            total += float(s) #changed data type to float from int
+            hasNumber = True # if total was changed, the array has a number
         except:
             pass
 
-    return total
+    if(hasNumber):
+        return total
+    
+    return None
