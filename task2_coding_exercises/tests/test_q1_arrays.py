@@ -16,6 +16,6 @@ def test_reverse_str_arr():
 
 
 def test_most_freq_element():
-    assert most_freq_element([1, 33, 1, -2, 33]) == 33
+    assert most_freq_element([1, 33, 1, -2, 33]) == 1
     assert most_freq_element([1, 2, 3, 4]) == 1
     assert most_freq_element([3, 5, 1, 5, 3]) == 3
