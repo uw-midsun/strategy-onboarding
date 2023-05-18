@@ -5,7 +5,7 @@ Test cases can be found in the "tests" folder
 """
 
 
-def adjacent_subtraction(arr: list[int]) -> list[int] | None:
+def adjacent_subtraction(arr: list[int]):
     """
     Returns a list of numbers where result[i] is the value of arr[i+1] - arr[i].
     The returned array will have 1 less element than arr.
@@ -27,7 +27,7 @@ def adjacent_subtraction(arr: list[int]) -> list[int] | None:
     return results
 
 
-def str_math(arr: list[str]) -> int | float | None:
+def str_math(arr: list[str]):
     """
     Add all the number strings in arr together.
     eg. ["1", "6", "3", "2", "8"] => 20
