@@ -40,7 +40,7 @@ def most_freq_element(arr: list[int]) -> int:
     Find the value that appears the most frequently in the array.
     If there are multiple, return the value that appears first in the array.
     The array will always have at least 1 element.
-    eg. [1, 33, 1, -2, 33] => 33
+    eg. [1, 33, 1, -2, 33] => 1
     eg. [1, 2, 3, 4] => 1
     eg. [3, 5, 1, 5, 3] => 3
 
