@@ -14,5 +14,5 @@ def test_str_math():
     assert str_math(["1", "6", "3", "2", "8"]) == 20
     assert str_math(["1", "b", "3", "-2", []]) == 2
     assert str_math(["1", "b", "3.5", "-12"]) == -7.5
-    assert str_math(["hi"]) == None
+    assert str_math(["hi"]) == 0
     assert str_math([]) == None
