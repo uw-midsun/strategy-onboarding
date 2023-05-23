@@ -6,7 +6,7 @@ from ..q2_debugging import adjacent_subtraction, str_math
 def test_adjacent_subtraction():
     assert adjacent_subtraction([1, 6, 3, 2, 8]) == [5, -3, -1, 6]
     assert adjacent_subtraction([1, 2, 3, 4]) == [1, 1, 1]
-    assert adjacent_subtraction([1]) == [1]
+    assert adjacent_subtraction([1]) == []
     assert adjacent_subtraction([]) == None
 
 
