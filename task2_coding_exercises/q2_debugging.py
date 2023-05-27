@@ -12,7 +12,7 @@ def adjacent_subtraction(arr: list[int]) -> list[int] | None:
     Return None if arr is empty.
     eg. [1, 6, 3, 2, 8] => [5, -3, -1, 6]
     eg. [1, 2, 3, 4] => [1, 1, 1]
-    eg. [1] => []
+    eg. [1] => [1]
     eg. [] => None
 
     @param array of integers
@@ -21,6 +21,8 @@ def adjacent_subtraction(arr: list[int]) -> list[int] | None:
 
     if len(arr) == 0:
         return None
+    elif len(arr) == 1:
+        return [arr[0]]
 
     results = []
     for i in range(len(arr)):
