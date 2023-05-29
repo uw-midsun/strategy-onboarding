@@ -7,4 +7,21 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 - Will require reading from CSV so feel free to use pandas
 """
 
-# Your code here
+# used to read data from csv
+import pandas as pd 
+# used to plot data read from pandas
+import matplotlib.pyplot as plt 
+used_data = pd.read_csv('q3_test_data.csv', header = None)
+
+# set the axes of the graph (x, y)
+x = used_data[0]
+plt.plot(x, x)
+
+for lines in range(1, 4):
+    # same graph for 4
+    plt.title('task 3 graph')
+    plt.plot(x, used_data[lines])
+
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.show()
