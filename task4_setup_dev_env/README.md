@@ -35,3 +35,7 @@ Please download the software/tools associated with your operating system.
 - WSL (Windows only)
 - Excel viewer (if you're working with `.csv` files)
 - GitLens
+
+## Other
+
+- [Useful aliases for git in your terminal](https://gist.github.com/filidorwiese/d228588ee8023c6fdfb24c85979172ab#file-git-aliases) and [how to set them up](https://linuxize.com/post/how-to-create-bash-aliases/)
