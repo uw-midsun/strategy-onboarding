@@ -36,7 +36,7 @@ def reverse_str_arr(s: str) -> list[str]:
     """
 
     # reverse the contents of the string
-    reverse_string = s[::1]
+    reverse_string = s[::-1]
     reverse_list = []
 
     for letter_index in range(0, len(reverse_string)):
