@@ -8,3 +8,12 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 """
 
 # Your code here
+
+import pandas as pd 
+import matplotlib.pyplot as plt 
+
+data = pd.read_csv("task2_coding_exercises\q3_test_data.csv")
+
+data.plot(subplots=True)
+plt.show()
+
