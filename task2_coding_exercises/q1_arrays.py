@@ -17,8 +17,9 @@ def find_min_index(arr: list[int]) -> int:
     """
 
     # insert code here
-    pass
-
+    for i in arr:
+        if min(arr)==i:
+            return arr.index(i)
 
 def reverse_str_arr(s: str) -> list[str]:
     """
@@ -32,7 +33,10 @@ def reverse_str_arr(s: str) -> list[str]:
     """
 
     # insert code here
-    pass
+    characters = []
+    for i in range(len(s)):
+        characters += s[-1-i]
+    return characters
 
 
 def most_freq_element(arr: list[int]) -> int:
@@ -49,4 +53,10 @@ def most_freq_element(arr: list[int]) -> int:
     """
 
     # insert code here
-    pass
+    max=0
+    for i in arr:
+        frequency = arr.count(i)
+        if frequency>max:
+            max = frequency
+            element = i
+    return element
