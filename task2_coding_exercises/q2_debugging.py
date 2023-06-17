@@ -19,11 +19,15 @@ def adjacent_subtraction(arr: list[int]):
     @returns array of integers or None
     """
     results = []
-    for i in range(len(arr)):
-        first = arr[i]
-        second = arr[i + 1]
-        results.append(second - first)
-
+    if len(arr) == 0:
+        return None 
+    elif len(arr) == 1:
+        return arr
+    else:
+        for i in range(len(arr)-1):
+            first = arr[i]
+            second = arr[i + 1]
+            results.append(second - first)
     return results
 
 
