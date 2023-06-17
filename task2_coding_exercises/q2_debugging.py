@@ -19,7 +19,7 @@ def adjacent_subtraction(arr: list[int]):
     @returns array of integers or None
     """
     results = []
-    if len(arr) == 0:
+    if not arr:
         return None 
     elif len(arr) == 1:
         return arr
@@ -43,11 +43,13 @@ def str_math(arr: list[str]):
     @param array of strings
     @returns an int, float, or None
     """
-    total = 0
-    for s in arr:
-        try:
-            total += int(s)
-        except:
-            pass
-
+    if not arr: 
+        return None
+    else:
+        total = 0
+        for s in arr:
+            try:
+                total += float(s)
+            except:
+                total += 0
     return total
