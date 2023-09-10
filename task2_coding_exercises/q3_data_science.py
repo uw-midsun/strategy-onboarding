@@ -8,3 +8,14 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 """
 
 # Your code here
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv(
+    r'C:\Users\ambar\Documents\strategy-onboarding\task2_coding_exercises\q3_test_data.csv')
+# df = pd.read_csv('q3_test_data.csv')
+
+plt.plot(df.iloc[:, 3])
+plt.show()
+
+# plt.plot(df)
