@@ -11,3 +11,5 @@ Onboarding tasks:
   - `q3_data_science.py`
 - [ ] Task 3: Strategy team onboarding call
 - [ ] Task 4: Set up dev environment
+
+Note: Couldn't plot the 2^n grpah in q3. My python kept on crashing :(
