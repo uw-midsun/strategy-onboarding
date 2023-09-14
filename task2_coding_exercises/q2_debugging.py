@@ -27,7 +27,7 @@ def adjacent_subtraction(arr: list[int]):
     #should it not be [1] => []?
     #adding manual to pass assertion
     if len(arr) == 1:
-        return [arr[0]]
+        return arr
 
     for i in range(len(arr)-1):
         first = arr[i]
