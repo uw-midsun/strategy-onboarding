@@ -11,6 +11,7 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 csv = "q3_test_data.csv"
 data = pd.read_csv(csv,header=None)
@@ -23,6 +24,9 @@ for i, col in enumerate(cols):
     plt.figure(figsize=(12,8))
     plt.plot(data.iloc[:,i])
     plt.title(f"Col: {i+1}")
+    plot_file = os.path.join("q3_plots", f"column{i+1}_plot.png")
+    plt.tight_layout()
+    plt.savefig(plot_file)
 
 
 plt.show()
