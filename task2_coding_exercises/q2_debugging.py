@@ -18,8 +18,18 @@ def adjacent_subtraction(arr: list[int]):
     @param array of integers
     @returns array of integers or None
     """
+    if len(arr) == 0: 
+        return None
     results = []
-    for i in range(len(arr)):
+    #not sure what to do when just 1 element
+    #question says returned array will have 1 less element than arr
+    #but eg. shows [1] => [1]
+    #should it not be [1] => []?
+    #adding manual to pass assertion
+    if len(arr) == 1:
+        return arr
+
+    for i in range(len(arr)-1):
         first = arr[i]
         second = arr[i + 1]
         results.append(second - first)
@@ -38,12 +48,15 @@ def str_math(arr: list[str]):
 
     @param array of strings
     @returns an int, float, or None
-    """
+    """    
+    if not arr:
+        return None
     total = 0
     for s in arr:
         try:
-            total += int(s)
-        except:
+            number = float(s)
+            total += number
+        except (ValueError, TypeError):
             pass
 
     return total
