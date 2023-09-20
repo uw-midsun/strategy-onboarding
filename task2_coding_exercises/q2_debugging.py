@@ -4,7 +4,6 @@ Fix them so that they work with the examples given.
 Test cases can be found in the "tests" folder
 """
 
-
 def adjacent_subtraction(arr: list[int]):
     """
     Returns a list of numbers where result[i] is the value of arr[i+1] - arr[i].
@@ -18,14 +17,25 @@ def adjacent_subtraction(arr: list[int]):
     @param array of integers
     @returns array of integers or None
     """
+    
     results = []
-    for i in range(len(arr)):
-        first = arr[i]
-        second = arr[i + 1]
-        results.append(second - first)
+    
+    """if there is only one element in the array, return that element since there is nothing to subtract"""
+    if len(arr) == 1:
+        results.append( arr[0])
+    else:
+        """-1 since we cann't subtract the max with anything"""
+        for i in range(len(arr) - 1): 
+            first = arr[i]
+            second = arr[i + 1]
+            results.append(second - first)
 
     return results
 
+print( adjacent_subtraction([1, 6, 3, 2, 8]))
+print(adjacent_subtraction([1, 2, 3, 4]))
+print(adjacent_subtraction([1]))
+print( adjacent_subtraction([]))
 
 def str_math(arr: list[str]):
     """
@@ -42,8 +52,14 @@ def str_math(arr: list[str]):
     total = 0
     for s in arr:
         try:
-            total += int(s)
+            """do not round to an int!"""
+            total += float(s)
         except:
             pass
 
     return total
+
+print(str_math(["1", "6", "3", "2", "8"]))
+print(str_math(["1", "b", "3", "-2", []]))
+print(str_math(["1", "b", "3.5", "-12"]))
+print(str_math(["hi"]))
