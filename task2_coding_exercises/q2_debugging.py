@@ -18,14 +18,16 @@ def adjacent_subtraction(arr: list[int]):
     @param array of integers
     @returns array of integers or None
     """
+
+    if not arr: return None
     results = []
-    for i in range(len(arr)):
+    
+    for i in range(len(arr)-1):
         first = arr[i]
         second = arr[i + 1]
         results.append(second - first)
-
+    if not results: return arr
     return results
-
 
 def str_math(arr: list[str]):
     """
@@ -39,11 +41,16 @@ def str_math(arr: list[str]):
     @param array of strings
     @returns an int, float, or None
     """
+    if not arr:
+        return None
+    
     total = 0
     for s in arr:
         try:
-            total += int(s)
+            if s.isdigit():
+                total += int(s)
+            else:
+                total += float(s)
         except:
             pass
-
     return total
