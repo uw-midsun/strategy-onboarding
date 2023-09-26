@@ -2,7 +2,7 @@
 Complete the following functions.
 Test cases can be found in the "tests" folder
 """
-
+import numpy as np
 
 def find_min_index(arr: list[int]) -> int:
     """
@@ -17,7 +17,9 @@ def find_min_index(arr: list[int]) -> int:
     """
 
     # insert code here
-    pass
+
+    return np.argmin(arr)
+
 
 
 def reverse_str_arr(s: str) -> list[str]:
@@ -32,7 +34,12 @@ def reverse_str_arr(s: str) -> list[str]:
     """
 
     # insert code here
-    pass
+
+    arr1 = []
+    for i in s:
+        arr1.append(i)
+    arr2 = arr1[::-1]
+    return arr2
 
 
 def most_freq_element(arr: list[int]) -> int:
@@ -49,4 +56,18 @@ def most_freq_element(arr: list[int]) -> int:
     """
 
     # insert code here
+
+
+    max_count = 0
+    most_frequent = 0
+    for i in range(0,len(arr)):
+        counter = 0
+        for j in range(0,len(arr)):
+            if arr[i] == arr[j]:
+                counter+=1
+        if counter > max_count:
+            max_count = counter
+            most_frequent = arr[i]
+    return most_frequent
+
     pass
