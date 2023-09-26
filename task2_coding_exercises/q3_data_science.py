@@ -8,3 +8,11 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 """
 
 # Your code here
+import pandas as pd
+import matplotlib.pyplot as plt
+df = pd.read_csv('q3_test_data.csv')
+df.columns = list('ABCDE')
+
+df.plot(subplots=True, layout=(2, 3))
+plt.tight_layout()
+plt.savefig('./q3_plots/plot.png')
