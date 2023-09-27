@@ -8,7 +8,6 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 """
 
 # Your code here
-
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -19,6 +18,12 @@ df = pd.read_csv('q3_test_data.csv', header = None)
 df.fillna(0)
 
 for i in range(5):
-    print(df[i])
-    plt.plot(df[i])
+    #log scale for large data
+    if i == 4:
+        plt.yscale('log')
+    plt.plot(df.iloc[:, i])
+    plt.title(f"Column {i+1}")
+    plt.xlabel("x-axis")
+    plt.ylabel("y-axis")
+
     plt.show()
