@@ -6,5 +6,10 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 - Be careful of data points that don't exist
 - Will require reading from CSV so feel free to use pandas
 """
+import matplotlib.pyplot as plt
+import pandas as pd 
 
-# Your code here
+df = pd.read_csv('q3_test_data.csv')
+
+df.plot()
+plt.show()
