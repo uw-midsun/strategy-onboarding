@@ -15,11 +15,22 @@ def adjacent_subtraction(arr: list[int]):
     eg. [1] => [1]
     eg. [] => None
 
-    @param array of integers
-    @returns array of integers or None
+    Parameters:
+    arr (list of int): The input list of integers.
+
+    Returns:
+    list of int or None: The list of differences or None if arr is empty.
     """
+
+    if not arr:
+        return None
+    
+    if len(arr) == 1:
+        return [arr[0]]
+    
     results = []
-    for i in range(len(arr)):
+
+    for i in range(len(arr) - 1):
         first = arr[i]
         second = arr[i + 1]
         results.append(second - first)
@@ -39,11 +50,19 @@ def str_math(arr: list[str]):
     @param array of strings
     @returns an int, float, or None
     """
+    if not arr:
+        return None
+    
     total = 0
     for s in arr:
         try:
-            total += int(s)
+            newInt = int(s)
+            total += newInt
         except:
-            pass
+            try:
+                newFloat = float(s)
+                total += newFloat
+            except:
+                pass
 
     return total

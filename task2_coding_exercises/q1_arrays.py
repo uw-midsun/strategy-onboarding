@@ -17,7 +17,16 @@ def find_min_index(arr: list[int]) -> int:
     """
 
     # insert code here
-    pass
+    minNum = arr[0];
+    minIndex = 0 
+
+    for i in range(1, len(arr)):
+        if arr[i] < minNum:
+            minNum = arr[i]
+            minIndex = i
+    
+    return minIndex
+    pass 
 
 
 def reverse_str_arr(s: str) -> list[str]:
@@ -32,6 +41,13 @@ def reverse_str_arr(s: str) -> list[str]:
     """
 
     # insert code here
+    length = len(s)
+    newArr = []
+
+    for x in range(length - 1, -1, -1):
+        newArr.append(s[x])
+    
+    return newArr
     pass
 
 
@@ -49,4 +65,21 @@ def most_freq_element(arr: list[int]) -> int:
     """
 
     # insert code here
+    most_freq = arr[0]
+    max_count = 1
+
+    for i in range(len(arr)):
+        current_value = arr[i]
+        current_count = 1
+
+        for j in range(i + 1, len(arr)):
+            if arr[j] == current_value:
+                current_count += 1
+    
+        if current_count > max_count:
+            most_freq = current_value
+            max_count = current_count
+
+    return most_freq
+
     pass
