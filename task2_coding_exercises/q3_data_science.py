@@ -6,5 +6,20 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 - Be careful of data points that don't exist
 - Will require reading from CSV so feel free to use pandas
 """
+import pandas as pd
+import matplotlib.pyplot as plt
+import os
 
-# Your code here
+if not os.path.exists("q3_plots"):
+    os.makedirs("q3_plots")
+
+df = pd.read_csv('q3_test_data.csv')
+
+for column in df.columns:
+    if (column != "0"):
+        plt.xlabel(df.columns[0])
+        plt.ylabel(column)
+        plt.plot(df["0"], df[column])
+        plt.title("" + column + " vs " + df.columns[0])
+        
+        plt.close()
