@@ -21,5 +21,5 @@ for column in df.columns:
         plt.ylabel(column)
         plt.plot(df["0"], df[column])
         plt.title("" + column + " vs " + df.columns[0])
-        
+        plt.savefig(os.path.join("q3_plots", column + "_plot.png"))
         plt.close()
