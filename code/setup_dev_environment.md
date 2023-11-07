@@ -1,8 +1,8 @@
-# Task 4 - Setup dev environment
+# Setup dev environment
 
-This task is to get you set up (download) with the software/tools that we use. The software/tools listed below is not inclusive of all the software/tools that you may use - this is only a list of common software/tools that you may or encounter while you're on the team. The projects/work that you're involved in may involve other software/tools that are not listed below.
+The software/tools listed below is not inclusive of all the software/tools that you may use - this is only a list of common software/tools that you may or encounter while you're on the team. The projects/work that you're involved in may involve other software/tools that are not listed below.
 
-This task will not get you set up in the sense that you can start coding. Different projects may involve different setup procedures and it is best for you to contact the "owner" of the project to set up your environment (for that specific project).
+Setting up your dev environment will not get you set up in the sense that you can start coding. Different projects may involve different setup procedures and it is best for you to contact the "owner" of the project to set up your environment (for that specific project).
 
 Please download the software/tools associated with your operating system.
 
@@ -11,9 +11,9 @@ Please download the software/tools associated with your operating system.
 - [Git](https://git-scm.com/download/win) - ALL
 - [Bash](https://www.gnu.org/software/bash/) ((usually comes with Git)) - ALL
 - [VSCode](https://code.visualstudio.com/download) (recommended because of the extensions) - ALL
-- [JupyterLab](https://jupyter.org/install) - If you'll be data science related work
+- [JupyterLab](https://jupyter.org/install) - If you'll be working with data science work
 - [Docker](https://www.docker.com/products/docker-desktop/) - ALL
-- [WSL (basically a virtual machine for Linux)](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview) - All
+- [WSL (basically a virtual machine for Linux)](https://ubuntu.com/tutorials/install-ubuntu-on-wsl2-on-windows-11-with-gui-support#1-overview) - If you'll be working with Linux
 - [DBeaver](https://dbeaver.io/download/) - If you'll be working with databases/backend
 - [Postman](https://www.postman.com/) - If you'll be working with backend
 
