@@ -10,6 +10,7 @@ Put the generated plots in the "q3_plots" folder for us to see when you make a p
 # Your code here
 import matplotlib.pyplot as plt
 import pandas as pd
+import os
 
 
 # Read CSV file and drop NaN points
