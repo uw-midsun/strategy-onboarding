@@ -1,0 +1,9 @@
+# Generated pytest files
+**/__pycache__
+**/.pytest_cache
+
+# IDE files
+.vscode
+
+# venv
+.venv
